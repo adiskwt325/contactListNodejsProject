@@ -1,0 +1,201 @@
+{
+	"info": {
+		"_postman_id": "ab3f53b3-ed26-4544-b70b-df4c794d88c2",
+		"name": "SurveyHeartInterviewAssgnOne",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14933350"
+	},
+	"item": [
+		{
+			"name": "Create update contactList",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Aditya\",\r\n    \"email\": \"deleteme4@gmail.com\",\r\n    \"phoneNumber\": \"423432234564\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/contactList",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"contactList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add or update user contact",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"contactName\": \"contactdelete10\",\r\n    \"contactEmail\": \"contactdelete10@gmail.com\",\r\n    \"contactPhone\": \"57567451573464\",\r\n    \"contactType\": \"Business\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/contactList/contact/629f9360bec8a779beb242d6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"contactList",
+						"contact",
+						"629f9360bec8a779beb242d6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Entire Contact List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/contactList",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"contactList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get user by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/contactList/629f4b153d25f9b8e4b55cf0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"contactList",
+						"629f4b153d25f9b8e4b55cf0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get user by id and filter contact by contact type",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/contactList/filter/629f4b153d25f9b8e4b55cf0/All",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"contactList",
+						"filter",
+						"629f4b153d25f9b8e4b55cf0",
+						"All"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all users filter contacts by contact type",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/contactList/filter/All",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"contactList",
+						"filter",
+						"All"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete user by user id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/contactList/629f55193307ebde783716f4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"contactList",
+						"629f55193307ebde783716f4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete contact by contact id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/contactList/contact/629f4cb08550f8a71799acb5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"contactList",
+						"contact",
+						"629f4cb08550f8a71799acb5"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
